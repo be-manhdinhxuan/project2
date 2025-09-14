@@ -404,3 +404,86 @@ button {
 .item-course .btn-book-now:hover {
   background-color: var(--primary-color);
 }
+
+/* Feedback */
+.feedback {
+  background-color: #2e2100;
+}
+
+.feedback .body {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+  padding: 96px 0;
+}
+
+.feedback .main-info {
+  width: 159px;
+}
+
+.feedback .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback .main-info .name {
+  margin-top: 18px;
+  font-family: var(--font-heading), serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #f7f7f7;
+}
+
+.feedback .main-info .role {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #bfbcb2;
+}
+
+.feedback .main-info .navigation {
+  display: flex;
+  margin-top: 28px;
+}
+
+.feedback .dot {
+  margin-left: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: #634700;
+  border-radius: 50%;
+}
+
+.feedback .dot:first-child {
+  margin-left: 0;
+}
+
+.feedback .dot:hover,
+.feedback .dot-active {
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.blockquote {
+  position: relative;
+  margin: 28px 0 0 271px;
+  width: 770px;
+}
+
+.blockquote img {
+  position: absolute;
+  top: -28px;
+  left: -30px;
+}
+
+.blockquote blockquote {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  color: #ffffff;
+}
