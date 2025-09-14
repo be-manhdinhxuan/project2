@@ -22,6 +22,13 @@ body {
 }
 
 /* Common */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -31,6 +38,11 @@ a {
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 .btn {
@@ -48,6 +60,11 @@ a {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+.row {
+  display: flex;
+  align-items: center;
 }
 
 /* Fixed header */
@@ -270,4 +287,120 @@ a {
   font-size: 4.4rem;
   line-height: 1.23;
   color: #171100;
+}
+
+/* Popular */
+.popular {
+  margin-top: 200px;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-top .info .title {
+  font-family: var(--font-heading), serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+
+.popular-top .info .desc {
+  width: 458px;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #5f5b53;
+}
+.popular-top .pagination {
+  display: flex;
+}
+
+.popular-top .pagination img {
+  margin-left: 18px;
+  padding: 12px 15px;
+  border-radius: 50%;
+}
+
+.pagination .pagination-left {
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .pagination .pagination-right {
+  padding: 13px 16px;
+  background-color: var(--primary-color);
+}
+
+.popular-bottom {
+  margin-top: 55px;
+}
+
+.list-courses {
+  gap: 30px;
+}
+
+.list-courses .item-course {
+  border: 1px solid #e2dfda;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.list-courses .item-course .image {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+}
+
+.item-course .info {
+  padding: 16px 22px 0;
+}
+
+.item-course .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #171100;
+}
+
+.item-course .rating {
+  display: flex;
+  margin-left: auto;
+}
+
+.item-course .rating .qlt-rating {
+  margin-left: 6px;
+}
+
+.item-course .desc {
+  width: 326px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  color: #5f5b53;
+}
+
+.item-course .row-book-now {
+  justify-content: space-between;
+  padding: 12px 0 22px;
+}
+
+.item-course .cost {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #171100;
+}
+
+.item-course .btn-book-now {
+  font-size: 1.4rem;
+  background-color: #171100;
+}
+
+.item-course .btn-book-now:hover {
+  background-color: var(--primary-color);
 }
