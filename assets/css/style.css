@@ -22,9 +22,86 @@ body {
 }
 
 /* Common */
+a {
+  text-decoration: none;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #171100;
+  border-radius: 24.5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Fixed header */
+.header {
+  background-color: #fffcf4;
+}
+
+.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.header .navigation {
+  display: flex;
+  margin-left: auto;
+}
+
+.header .navigation ul {
+  display: flex;
+}
+
+.navigation a {
+  position: relative;
+  padding: 8px 21px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #5f5b53;
+}
+
+.navigation a:hover,
+.navigation li.active a {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+
+.navigation li.active a::after {
+  content: "";
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  width: 12px;
+  height: 2px;
+  background-color: #171100;
+  border-radius: 1px;
+}
+
+.sign-up-btn {
+  min-width: 144px;
 }
