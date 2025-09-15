@@ -389,6 +389,7 @@ button {
 
 .item-course .rating {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
